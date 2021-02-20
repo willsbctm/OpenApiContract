@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0C50226A-7EA5-421D-8C64-447850DBB3BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApiContract.Validator", "src\OpenApiContract.Validator\OpenApiContract.Validator.csproj", "{93AA01B2-22F7-470D-87E4-D0F96397EC78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiContract.Validator", "src\OpenApiContract.Validator\OpenApiContract.Validator.csproj", "{93AA01B2-22F7-470D-87E4-D0F96397EC78}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "teste", "teste", "{D3616C66-A939-4A25-8E9F-E061CA8DA617}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D3616C66-A939-4A25-8E9F-E061CA8DA617}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApiContract.Validator.Tests", "test\OpenApiContract.Validator.Tests\OpenApiContract.Validator.Tests.csproj", "{0F8BB665-FC23-4082-BD98-9343C7317854}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiContract.Validator.Tests", "test\OpenApiContract.Validator.Tests\OpenApiContract.Validator.Tests.csproj", "{0F8BB665-FC23-4082-BD98-9343C7317854}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiContract.Validator.Api", "test\OpenApiContract.Validator.Api\OpenApiContract.Validator.Api.csproj", "{6A376E31-02BC-4B58-B306-22A58679C172}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{93AA01B2-22F7-470D-87E4-D0F96397EC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,9 +47,28 @@ Global
 		{0F8BB665-FC23-4082-BD98-9343C7317854}.Release|x64.Build.0 = Release|Any CPU
 		{0F8BB665-FC23-4082-BD98-9343C7317854}.Release|x86.ActiveCfg = Release|Any CPU
 		{0F8BB665-FC23-4082-BD98-9343C7317854}.Release|x86.Build.0 = Release|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Debug|x64.Build.0 = Debug|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Release|x64.Build.0 = Release|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A376E31-02BC-4B58-B306-22A58679C172}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{93AA01B2-22F7-470D-87E4-D0F96397EC78} = {0C50226A-7EA5-421D-8C64-447850DBB3BF}
 		{0F8BB665-FC23-4082-BD98-9343C7317854} = {D3616C66-A939-4A25-8E9F-E061CA8DA617}
+		{6A376E31-02BC-4B58-B306-22A58679C172} = {D3616C66-A939-4A25-8E9F-E061CA8DA617}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B567C94-FA04-411A-8D1F-F78AF6549244}
 	EndGlobalSection
 EndGlobal

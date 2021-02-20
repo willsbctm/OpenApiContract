@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Linq;
+using OpenApiContract.Validator.JsonValidation;
 
 namespace OpenApiContract.Validator
 {

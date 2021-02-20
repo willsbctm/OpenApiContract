@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace OpenApiContract.Validator.Tests
+namespace OpenApiContract.Validator.Unit.Tests
 {
     public class Tests
     {

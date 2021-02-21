@@ -21,8 +21,8 @@ jobs:
         id: publish_nuget_common
         uses: rohith/publish-nuget@v2
         with:
-          PROJECT_FILE_PATH: src/nPact.Common/nPact.Common.csproj
-          PACKAGE_NAME: nPact.Common
+          PROJECT_FILE_PATH: src/OpenApiContract.Validator/OpenApiContract.Validator.csproj
+          PACKAGE_NAME: OpenApiContract.Validator
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           TAG_COMMIT: false
           VERSION_REGEX: ^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$

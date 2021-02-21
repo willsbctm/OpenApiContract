@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace OpenApiContract.Validator.JsonValidation
 {
-    public class JsonOneOfValidator : IJsonValidator
+    internal class JsonOneOfValidator : IJsonValidator
     {
         private JsonValidator _jsonValidator;
 

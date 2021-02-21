@@ -11,7 +11,7 @@ using Microsoft.OpenApi.Models;
 
 namespace OpenApiContract.Validator
 {
-    public class RequestValidator
+    internal class RequestValidator
     {
         private readonly IEnumerable<IContentValidator> _contentValidators;
 

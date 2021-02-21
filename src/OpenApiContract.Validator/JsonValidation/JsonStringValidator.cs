@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 
 namespace OpenApiContract.Validator.JsonValidation
 {
-    public class JsonStringValidator : IJsonValidator
+    internal class JsonStringValidator : IJsonValidator
     {
         public bool CanValidate(OpenApiSchema schema) => schema.Type == "string";
 

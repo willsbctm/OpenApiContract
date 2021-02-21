@@ -8,7 +8,6 @@ using System.Net.Http;
 using FakeItEasy;
 using System.Net;
 using OpenApiContract.Validator.Interceptors;
-using OpenApiContract.Validator.Extensions;
 using OpenApiContract.Validator.Api.Models;
 using System.Text.Json;
 using System.Collections.Generic;

@@ -3,7 +3,7 @@ using Microsoft.OpenApi.Models;
 
 namespace OpenApiContract.Validator
 {
-    public static class OpenApiDocumentExtensions
+    internal static class OpenApiDocumentExtensions
     {
         internal static bool TryFindOperationById(
             this OpenApiDocument openApiDocument,

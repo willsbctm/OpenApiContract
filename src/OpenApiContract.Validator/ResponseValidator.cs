@@ -8,7 +8,7 @@ using Microsoft.OpenApi.Models;
 
 namespace OpenApiContract.Validator
 {
-    public class ResponseValidator
+    internal class ResponseValidator
     {
         private readonly IEnumerable<IContentValidator> _contentValidators;
 

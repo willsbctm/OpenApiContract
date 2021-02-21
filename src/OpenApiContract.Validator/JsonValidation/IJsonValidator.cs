@@ -4,7 +4,7 @@ using Newtonsoft.Json.Linq;
 
 namespace OpenApiContract.Validator.JsonValidation
 {
-    public interface IJsonValidator
+    internal interface IJsonValidator
     {
         bool CanValidate(OpenApiSchema schema);
 

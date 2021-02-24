@@ -5,7 +5,7 @@ using Microsoft.OpenApi.Models;
 
 namespace OpenApiContract.Validator
 {
-    public static class OpenApiSchemaExtensions
+    internal static class OpenApiSchemaExtensions
     {
         internal static bool TryParse(this OpenApiSchema schema, string stringValue, out object typedValue)
         {

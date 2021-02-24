@@ -7,7 +7,7 @@ using OpenApiContract.Validator.JsonValidation;
 
 namespace OpenApiContract.Validator
 {
-    public class JsonContentValidator : IContentValidator
+    internal class JsonContentValidator : IContentValidator
     {
         private readonly JsonValidator _jsonValidator;
 

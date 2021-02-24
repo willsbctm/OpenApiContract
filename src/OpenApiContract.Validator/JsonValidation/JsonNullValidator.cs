@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace OpenApiContract.Validator.JsonValidation
 {
-    public class JsonNullValidator : IJsonValidator
+    internal class JsonNullValidator : IJsonValidator
     {
         public bool CanValidate(OpenApiSchema schema) => schema.Type == "null";
 

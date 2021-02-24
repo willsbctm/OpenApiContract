@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiContract.Validator.I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiContract.Validator.Api", "test\OpenApiContract.Validator.Api\OpenApiContract.Validator.Api.csproj", "{49ADC80E-C821-4C76-ADD3-0B18CCA49E86}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiContract.Validator.Api.External", "test\OpenApiContract.Validator.Api.External\OpenApiContract.Validator.Api.External.csproj", "{9557F5C0-B858-43FD-9192-3ACF7744CE8F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,18 +73,6 @@ Global
 		{49ADC80E-C821-4C76-ADD3-0B18CCA49E86}.Release|x64.Build.0 = Release|Any CPU
 		{49ADC80E-C821-4C76-ADD3-0B18CCA49E86}.Release|x86.ActiveCfg = Release|Any CPU
 		{49ADC80E-C821-4C76-ADD3-0B18CCA49E86}.Release|x86.Build.0 = Release|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Debug|x64.Build.0 = Debug|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Debug|x86.Build.0 = Debug|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Release|x64.ActiveCfg = Release|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Release|x64.Build.0 = Release|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Release|x86.ActiveCfg = Release|Any CPU
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,7 +82,6 @@ Global
 		{7332249E-1413-46E2-B658-EF6808A4AE9A} = {D3616C66-A939-4A25-8E9F-E061CA8DA617}
 		{EDCEA17C-37D3-4677-80C9-25E44CCC70C4} = {D3616C66-A939-4A25-8E9F-E061CA8DA617}
 		{49ADC80E-C821-4C76-ADD3-0B18CCA49E86} = {D3616C66-A939-4A25-8E9F-E061CA8DA617}
-		{9557F5C0-B858-43FD-9192-3ACF7744CE8F} = {D3616C66-A939-4A25-8E9F-E061CA8DA617}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B567C94-FA04-411A-8D1F-F78AF6549244}

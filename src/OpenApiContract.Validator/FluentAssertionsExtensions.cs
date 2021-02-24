@@ -2,7 +2,7 @@
 using OpenApiContract.Validator.Assertions;
 using OpenApiContract.Validator.Interceptors;
 
-namespace OpenApiContract.Validator.Extensions
+namespace OpenApiContract.Validator
 {
     public static class FluentAssertionsExtensions
     {

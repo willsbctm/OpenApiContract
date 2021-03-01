@@ -167,7 +167,7 @@ namespace OpenApiContract.Validator
             if (content == null)
                 return;
 
-            if (!requestBodySpec.Content.TryGetValue(content.Headers.ContentType.MediaType, out OpenApiMediaType mediaTypeSpec))
+            if (!requestBodySpec.Content.TryGetValue(content.Headers.ContentType.ToString(), out OpenApiMediaType mediaTypeSpec))
                 throw new RequestDoesNotMatchSpecException($"Content media type '{content.Headers.ContentType.MediaType}' is not specified");
 
             try

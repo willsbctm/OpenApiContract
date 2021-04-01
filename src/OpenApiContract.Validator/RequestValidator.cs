@@ -167,8 +167,7 @@ namespace OpenApiContract.Validator
             if (content == null)
                 return;
 
-            if (!requestBodySpec.Content.TryGetValue(content.Headers.ContentType.ToString(), out OpenApiMediaType mediaTypeSpec))
-                throw new RequestDoesNotMatchSpecException($"Content media type '{content.Headers.ContentType.MediaType}' is not specified");
+            var mediaTypeSpec = ValidateAndExtractOpenApiMediaType(requestBodySpec, content);
 
             try
             {
@@ -182,6 +181,19 @@ namespace OpenApiContract.Validator
             {
                 throw new RequestDoesNotMatchSpecException($"Content does not match spec. {contentException.Message}");
             }
+        }
+
+        private static OpenApiMediaType ValidateAndExtractOpenApiMediaType(OpenApiRequestBody requestBodySpec,
+            HttpContent content)
+        {
+            if (requestBodySpec.Content.TryGetValue(content.Headers.ContentType.MediaType, out var mediaTypeSpec))
+                return mediaTypeSpec;
+            
+            if (requestBodySpec.Content.TryGetValue(content.Headers.ContentType.ToString(), out mediaTypeSpec))
+                return mediaTypeSpec;
+            
+            throw new RequestDoesNotMatchSpecException(
+                $"Neither Content media type '{content.Headers.ContentType.MediaType}' or '{content.Headers.ContentType}' are specified.");
         }
     }
 

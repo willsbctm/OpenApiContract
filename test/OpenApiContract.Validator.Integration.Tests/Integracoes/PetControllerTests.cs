@@ -81,9 +81,7 @@ namespace OpenApiContract.Validator.Integration.Tests
             var content = new StringContent(JsonSerializer.Serialize(pet, new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-            }));
-            
-            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+            }), Encoding.UTF8, "application/json");
             
             var handler = A.Fake<InterceptorFakeHandler>(x => x.CallsBaseMethods());
             A.CallTo(() => handler.FakeSend(A<HttpRequestMessage>._))

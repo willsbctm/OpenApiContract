@@ -20,7 +20,7 @@ namespace OpenApiContract.Validator.Unit.Tests
             var openApi = new OpenApiDocumentBuilder()
                 .WithOperation(OperationType.Get)
                 .WithPath(pathTemplate)
-                .WithContentType("application/json")
+                .WithContentType("application/json; v=1")
                 .Build();
 
             var stringContent = new StringContent("{ A: 'B' }");

@@ -11,6 +11,7 @@ using OpenApiContract.Validator.Interceptors;
 using OpenApiContract.Validator.Api.Models;
 using System.Text.Json;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 
 namespace OpenApiContract.Validator.Integration.Tests
 {
@@ -80,7 +81,10 @@ namespace OpenApiContract.Validator.Integration.Tests
             var content = new StringContent(JsonSerializer.Serialize(pet, new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-            }), Encoding.UTF8, "application/json");
+            }));
+            
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+            
             var handler = A.Fake<InterceptorFakeHandler>(x => x.CallsBaseMethods());
             A.CallTo(() => handler.FakeSend(A<HttpRequestMessage>._))
                 .Returns(new InterceptedResponse
@@ -92,6 +96,7 @@ namespace OpenApiContract.Validator.Integration.Tests
                         Content = new StringContent(Faker.Random.Words(3), Encoding.UTF8, "application/json")
                     }
                 });
+            
             Setup.MeuClient = new HttpClient(handler);
 
             var url = $"{host}/pet";
